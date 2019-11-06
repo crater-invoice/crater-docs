@@ -1,6 +1,6 @@
 module.exports = {
-    title: 'Crater',
-    description: '',
+    title: 'Crater - Open Source Invoicing App',
+    description: 'Crater is an open-source app made in Laravel, VueJS & React Native that helps you track expenses, payments & create professional invoices & estimates',
     themeConfig: {
         nav: [
             { text: 'Home', link: '/' },
