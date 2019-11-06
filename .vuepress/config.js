@@ -1,10 +1,10 @@
 module.exports = {
-    title: 'Crater - Open Source Invoicing App',
+    title: 'Crater',
     description: 'Crater is an open-source app made in Laravel, VueJS & React Native that helps you track expenses, payments & create professional invoices & estimates',
     themeConfig: {
         nav: [
             { text: 'Home', link: '/' },
-            { text: 'Crater', link: 'https:www.google.co.in' },
+            { text: 'Github', link: 'https://github.com/bytefuryco/crater' },
             {
                 text: 'Languages',
                 items: [
@@ -13,10 +13,24 @@ module.exports = {
                 ]
             }
         ],
-        sidebar: {
-            '/installation/': [
-                ''
-            ]
-        }
+        sidebar: [
+            '/',
+            '/installation.md',
+            {
+                title: 'User Guide',
+                collapsable: false,
+                children: [
+                  '/guide/dashboard.md',
+                  '/guide/invoices.md',
+                  '/guide/estimates.md',
+                  '/guide/payments.md',
+                  '/guide/expenses.md',
+                  '/guide/taxes.md',
+                  '/guide/settings.md',
+                ]
+            },
+            '/documentation.md',
+            '/mobile.md',
+        ]
     }
 }

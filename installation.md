@@ -5,19 +5,19 @@ lang: en-US
 
 # Installation
 
-Crater is an CRM starter template for Laravel 5.7 PHP Framework which includes all the necessary boilerplate for your next CRM application.
 
-## Requirements
-    Crater has the same requirements that Laravel does but we have mentioned them below anyway for your reference.
+## Server Requirements:
 
-## SERVER REQUIREMENTS:
+Crater has the same requirements that Laravel does but we have mentioned them below anyway for your reference.
 
-    PHP >= 7.1.3
-    OpenSSL PHP Extension
-    PDO PHP Extension
-    Mbstring PHP Extension
-    Tokenizer PHP Extension
-    XML PHP Extension
+```
+PHP >= 7.1.3
+OpenSSL PHP Extension
+PDO PHP Extension
+Mbstring PHP Extension
+Tokenizer PHP Extension
+XML PHP Extension
+```
 
 ## OPTIONAL REQUIREMENTS:
 
@@ -29,16 +29,6 @@ Crater is an CRM starter template for Laravel 5.7 PHP Framework which includes a
     Mac: MAMP/MAMP Pro/ Laravel Valet (Recommended)
     Windows: WAMP / Laragon (Recommended & Easier to setup)
     Laravel Homestead
-
-## Directory Structure:
-    |-- admin: Admin Views
-        |-- dashboard : Dashboard views
-        |-- layouts : All Master layout files and Partials like header, footer , etc
-        |-- pages : Demo view files for Preview
-        |-- sessions : Login & Register views
-        |-- settings : Setting views
-        |-- users : UserList view and show view
-    |-- front : Frontend Views
 
 ## Installation
 1. Clone or Download the Crater repository from: **http://github.com/crater/crater**
