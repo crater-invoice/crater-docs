@@ -28,6 +28,7 @@ module.exports = {
                   '/guide/payments.md',
                   '/guide/expenses.md',
                   '/guide/taxes.md',
+                  '/guide/reports.md',
                   '/guide/settings.md',
                 ]
             },
