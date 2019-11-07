@@ -21,6 +21,7 @@ module.exports = {
                 collapsable: false,
                 children: [
                   '/guide/dashboard.md',
+                  '/guide/customers.md',
                   '/guide/invoices.md',
                   '/guide/estimates.md',
                   '/guide/payments.md',

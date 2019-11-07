@@ -1,1 +1,3 @@
 # Estimates
+
+The Estimates page displays all the created invoice estimates. You can create new estimates by selecting an existing customer or adding a new one. An estimate can be created using one of the three pre-designed templates. You can add additional taxes to the invoice estimate and also add it as a compound tax. Once an estimate is created you can edit, view or mark it as sent. You can also convert a created estimate to an invoice.
