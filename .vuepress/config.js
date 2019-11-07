@@ -22,8 +22,9 @@ module.exports = {
                 children: [
                   '/guide/dashboard.md',
                   '/guide/customers.md',
-                  '/guide/invoices.md',
+                  '/guide/items.md',
                   '/guide/estimates.md',
+                  '/guide/invoices.md',
                   '/guide/payments.md',
                   '/guide/expenses.md',
                   '/guide/taxes.md',
@@ -33,5 +34,15 @@ module.exports = {
             '/documentation.md',
             '/mobile.md',
         ]
-    }
+    },
+    plugins: [
+        // you can use this plugin multiple times
+        [
+          'vuepress-plugin-container',
+          {
+            type: 'wrapper',
+            defaultTitle: '',
+          },
+        ]
+      ],    
 }
