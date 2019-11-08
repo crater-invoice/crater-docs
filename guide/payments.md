@@ -19,7 +19,7 @@ You can add new payment entry by selecting a date, customer, invoice (optional) 
 ![New Payment Page](/images/payments-new.png)
 :::
 
-## View All Payments
+## List Payments
 
 All created Payment entries are shown on the Payments page and you can easily edit or delete them as well. You can also use filters to quickly search for a particular payment entry by its selected customer, number & mode.
 

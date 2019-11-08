@@ -20,7 +20,7 @@ Once an estimate is created you can edit, view or mark it as sent. You can also 
 ![Estimate Create Page](/images/new-estimate.png)
 :::
 
-## View All Estimates
+## List Estimates
 
 All created estimates are shown on the Estimates page and you can easily edit or delete them as well. You can also use filters to quickly search for a particular estimate by its customer, status, date and number.
 

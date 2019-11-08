@@ -1,6 +1,6 @@
 # Customers
 
-You can access the customers tab from the sidebar menu. 
+You can access the customers tab from the sidebar menu.
 
 ## Add New Customer
 
@@ -21,7 +21,7 @@ You can also add a customer quickly by accessing the page by clicking the plus i
 ![Customers Create Page](/images/customer-new.png)
 :::
 
-## View All Customers
+## List Customers
 
 All created customers are shown on the Customers page and you can easily edit or delete them as well. You can also use filters to quickly search for a particular customer by their Display Name, Contact Name & Phone number.
 

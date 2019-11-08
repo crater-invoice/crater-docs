@@ -20,7 +20,7 @@ Note that crater supports per-item discounts as well as discounts on the total i
 ![Invoics Create Page](/images/invoices-new.png)
 :::
 
-## View All Invoices
+## List Invoices
 
 All created invoices are shown on the Invoices page and you can easily edit or delete them as well. You can also use filters to quickly search for a particular invoice by its customer, status, date and number.
 
