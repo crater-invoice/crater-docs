@@ -15,7 +15,7 @@
 ## Preferences
 
 ::: wrapper
-![Preferences Page](/images/new-estimate.png)
+![Preferences Page](/images/preferences.png)
 :::
 
 ## Tax Types
@@ -27,11 +27,11 @@
 ## Expense Categories
 
 ::: wrapper
-![Expense Categories Page](/images/new-estimate.png)
+![Expense Categories Page](/images/expense-categories.png)
 :::
 
 ## Notifications
 
 ::: wrapper
-![Estimate Create Page](/images/new-estimate.png)
+![Estimate Create Page](/images/notifications.png)
 :::
