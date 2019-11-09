@@ -1,6 +1,6 @@
 # Mobile Apps
 
-You can use Crater's IOS and Android Apps to manage your own self-hosted Crater Web Application.
+You can use Crater IOS and Android Apps to manage your own self-hosted Crater Web Application.
 
 When you open the mobile app for the first time, you will see the below screen which allows you to connect the mobile app to your self-hosted web application.
 
