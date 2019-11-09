@@ -26,15 +26,13 @@ XML PHP Extension
 
 ### Step 1 : Download
 
-Clone the repository from github <https://github.com/bytefuryco/crater>.
+[Download](https://github.com/bytefuryco/crater/archive/master.zip)the Crater package and unzip the downloaded package.
 
-Alternatively, You can [Download](https://github.com/bytefuryco/crater/archive/master.zip)the Crater package and unzip the downloaded package.
-
-It is preferred that you clone the package, as that would make it easier for you to receive the latest updates in future.
+Alternatively, You can Clone the repository from github <https://github.com/bytefuryco/crater>.
 
 ### Step 2 : Upload to Server
 
-Upload all the files to your server root folder.
+Upload all the files to your server.
 
 ### Step 3 : Open the link
 
