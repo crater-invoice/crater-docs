@@ -56,5 +56,6 @@ module.exports = {
             defaultTitle: '',
           },
         ]
-      ],
+    ],
+    dest: './dist'
 }
