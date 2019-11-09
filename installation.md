@@ -32,7 +32,7 @@ Alternatively, You can Clone the repository from github <https://github.com/byte
 
 ### Step 2 : Upload to Server
 
-Upload all the files to your server.
+Upload all the unzipped files & folders to your server.
 
 ### Step 3 : Open the link
 
