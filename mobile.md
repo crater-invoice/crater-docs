@@ -11,6 +11,3 @@ That's it! Just click on Save and you are all set to login into crater using you
 ::: wrapper
 ![Mobile App](/images/endpoint-setup.png)
 :::
-
-
-Alternatively, If you have some experience with React Native, you can also create your own mobile application using Crater's source code and publish it as your own.

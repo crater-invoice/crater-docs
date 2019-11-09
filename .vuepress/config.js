@@ -43,7 +43,7 @@ module.exports = {
                   '/guide/settings.md',
                 ]
             },
-            '/documentation.md',
+            // '/documentation.md',
             '/mobile.md',
         ]
     },
