@@ -43,8 +43,9 @@ module.exports = {
                   '/guide/settings.md',
                 ]
             },
-            // '/documentation.md',
             '/mobile.md',
+            '/api-documentation.md',
+            '/developer-guide.md',
         ]
     },
     plugins: [
