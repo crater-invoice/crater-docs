@@ -16,6 +16,7 @@ module.exports = {
         nav: [
             { text: 'Home', link: '/' },
             { text: 'Github', link: 'https://github.com/bytefuryco/crater' },
+            { text: 'Website', link: 'https://craterapp.com' },
             {
                 text: 'Languages',
                 items: [
