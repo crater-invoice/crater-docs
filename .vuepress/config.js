@@ -15,7 +15,7 @@ module.exports = {
         logo: '/images/crater-logo.png',
         nav: [
             { text: 'Home', link: '/' },
-            { text: 'Github', link: 'https://github.com/bytefuryco/crater' },
+            { text: 'Github', link: 'https://github.com/bytefury/crater' },
             { text: 'Website', link: 'https://craterapp.com' },
             {
                 text: 'Languages',

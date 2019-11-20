@@ -3,7 +3,7 @@ Development & Contribution guide for Developers looking to customize crater for 
 
 ## Installation
 
-1. Clone the repository from github <https://github.com/bytefuryco/crater>.
+1. Clone the repository from github <https://github.com/bytefury/crater>.
 2. Install NPM globally if you haven't installed that already , for more information please refer this link
 3. After installing NPM globally , run `npm install` inside your cloned folder, it will download all the required dependencies.
 3. Install composer to your system and run `composer install` inside your cloned folder to install all laravel dependencies.
