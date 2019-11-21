@@ -32,18 +32,18 @@ Alternatively, If you are a developer. Follow the installation steps for your pr
 
 ### Step 2 : Upload to Server
 
-Upload the downloaded zip file to your Server and Unzip it, you should see the Crater folder.
+Upload the downloaded zip file to your Server and unzip it, you should see the Crater folder.
 
-### Step 3 : Point the domain to the folder
+### Step 3 : Point the domain to the uploaded folder
 
 Point your domain or subdomain to the `public` directory inside the Crater folder. 
 
 Please note that, Crater must be installed on a primary domain or subdomain. Installing on a sub-folder will not work, for example:
-- [ ] `example.com/craterapp` (Invalid)
-- [ ] `localhost/crater` (Invalid)
-- [x] `example.com` (Valid)
-- [x] `crater.example.com` (Valid)
-- [x] `crater.test` (Valid)
+- `example.com/craterapp` (Invalid)
+- `localhost/crater` (Invalid)
+- `example.com` (Valid)
+- `crater.example.com` (Valid)
+- `crater.test` (Valid)
 
 ### Step 3 : Open the link
 
