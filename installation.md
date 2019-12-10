@@ -5,10 +5,34 @@ lang: en-US
 
 # Installation
 
+## Installation with Docker
 
-## Server Requirements:
+> This is only recommended to those who are familiar with Docker setups.
+  It's recommended to use a reverse proxy, a Nginx instance is included in
+  the example Docker compose file. You should configure the virtual hosts
+  by yourself.
 
-Crater has the same requirements that Laravel does but we have mentioned them below anyway for your reference.
+1. Install Docker on your host: https://docs.docker.com/install/
+2. Install docker-compose: https://docs.docker.com/compose/install/
+3. Clone the repository: `git clone https://github.com/bytefury/crater`
+4. Go into the repo directory and deploy using example docker-compose setup:
+```
+$ cd crater
+$ docker-compose up -d
+```
+5. You can check the logs with `docker-compose logs`
+6. Go to your crater domain and follow the installation wizard.
+
+If you ever want to check the Laravel logs:
+```
+$ cd $(docker volume inspect --format '{{ .Mountpoint }}' crater_app)/storage/logs
+$ ls
+$ tail -n200 log_file_name.log
+```
+
+## Manual Installation
+
+### Requirements
 
 ```
 PHP >= 7.2.0
@@ -21,8 +45,6 @@ PDO PHP Extension
 Tokenizer PHP Extension
 XML PHP Extension
 ```
-
-## Installation Steps
 
 ### Step 1 : Download
 
