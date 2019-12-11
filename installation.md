@@ -22,6 +22,8 @@ $ docker-compose up -d
 ```
 5. You can check the logs with `docker-compose logs`
 6. Go to your crater domain and follow the installation wizard.
+7. For *Database Name*, *Database Username*, and *Database Password*, use `crater`.  
+  `db` for *Database Host*.
 
 If you ever want to check the Laravel logs:
 ```
