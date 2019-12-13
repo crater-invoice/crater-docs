@@ -52,7 +52,7 @@ XML PHP Extension
 
 [Download](http://craterapp.com/downloads) the Crater package.
 
-Alternatively, If you are a developer. Follow the installation steps for your project on [this Link](./developer-guide.md)
+Alternatively, If you are a developer, follow the installation steps for your project on [this Link](./developer-guide.md)
 
 ### Step 2 : Upload to Server
 
