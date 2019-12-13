@@ -18,6 +18,7 @@ lang: en-US
 4. Go into the repo directory and deploy using example docker-compose setup:
 ```
 $ cd crater
+$ mv docker-compose.yaml.example docker-compose.yaml
 $ docker-compose up -d
 ```
 5. You can check the logs with `docker-compose logs`
