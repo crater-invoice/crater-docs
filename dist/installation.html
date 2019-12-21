@@ -15,7 +15,7 @@
   <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
     
-    <link rel="preload" href="/assets/css/0.styles.adea845d.css" as="style"><link rel="preload" href="/assets/js/app.0252786d.js" as="script"><link rel="preload" href="/assets/js/2.2ef0ab72.js" as="script"><link rel="preload" href="/assets/js/19.63d559ab.js" as="script"><link rel="prefetch" href="/assets/js/10.69fb88e7.js"><link rel="prefetch" href="/assets/js/11.630a5b76.js"><link rel="prefetch" href="/assets/js/12.e6fbdeb9.js"><link rel="prefetch" href="/assets/js/13.f8e5d61a.js"><link rel="prefetch" href="/assets/js/14.76c5f453.js"><link rel="prefetch" href="/assets/js/15.e2b68f4c.js"><link rel="prefetch" href="/assets/js/16.6618172a.js"><link rel="prefetch" href="/assets/js/17.c7d94bff.js"><link rel="prefetch" href="/assets/js/18.d4832d31.js"><link rel="prefetch" href="/assets/js/20.2d0d7d0a.js"><link rel="prefetch" href="/assets/js/21.a2079b54.js"><link rel="prefetch" href="/assets/js/3.59cc6fac.js"><link rel="prefetch" href="/assets/js/4.d201b842.js"><link rel="prefetch" href="/assets/js/5.99b7bc69.js"><link rel="prefetch" href="/assets/js/6.a1ba6fb3.js"><link rel="prefetch" href="/assets/js/7.39d8fdd0.js"><link rel="prefetch" href="/assets/js/8.4085d468.js"><link rel="prefetch" href="/assets/js/9.05c3d7f4.js">
+    <link rel="preload" href="/assets/css/0.styles.adea845d.css" as="style"><link rel="preload" href="/assets/js/app.014eea1b.js" as="script"><link rel="preload" href="/assets/js/2.2ef0ab72.js" as="script"><link rel="preload" href="/assets/js/19.8e7e6f57.js" as="script"><link rel="prefetch" href="/assets/js/10.9273cf37.js"><link rel="prefetch" href="/assets/js/11.b68b3e28.js"><link rel="prefetch" href="/assets/js/12.159d23a2.js"><link rel="prefetch" href="/assets/js/13.f8e5d61a.js"><link rel="prefetch" href="/assets/js/14.76c5f453.js"><link rel="prefetch" href="/assets/js/15.a3545f23.js"><link rel="prefetch" href="/assets/js/16.3ea44543.js"><link rel="prefetch" href="/assets/js/17.c48e26b2.js"><link rel="prefetch" href="/assets/js/18.bb312d48.js"><link rel="prefetch" href="/assets/js/20.b754cd6f.js"><link rel="prefetch" href="/assets/js/21.a2079b54.js"><link rel="prefetch" href="/assets/js/3.59cc6fac.js"><link rel="prefetch" href="/assets/js/4.d201b842.js"><link rel="prefetch" href="/assets/js/5.2d521818.js"><link rel="prefetch" href="/assets/js/6.f9939433.js"><link rel="prefetch" href="/assets/js/7.1db34eac.js"><link rel="prefetch" href="/assets/js/8.d5546d34.js"><link rel="prefetch" href="/assets/js/9.915e34ba.js">
     <link rel="stylesheet" href="/assets/css/0.styles.adea845d.css">
   </head>
   <body>
@@ -31,6 +31,7 @@
 It's recommended to use a reverse proxy, a Nginx instance is included in
 the example Docker compose file. You should configure the virtual hosts
 by yourself.</p></blockquote> <ol><li>Install Docker on your host: https://docs.docker.com/install/</li> <li>Install docker-compose: https://docs.docker.com/compose/install/</li> <li>Clone the repository: <code>git clone https://github.com/bytefury/crater</code></li> <li>Go into the repo directory and deploy using example docker-compose setup:</li></ol> <div class="language- extra-class"><pre class="language-text"><code>$ cd crater
+$ mv docker-compose.yaml.example docker-compose.yaml
 $ docker-compose up -d
 </code></pre></div><ol start="5"><li>You can check the logs with <code>docker-compose logs</code></li> <li>Go to your crater domain and follow the installation wizard.</li> <li>For <em>Database Name</em>, <em>Database Username</em>, and <em>Database Password</em>, use <code>crater</code>.<br> <code>db</code> for <em>Database Host</em>.</li></ol> <p>If you ever want to check the Laravel logs:</p> <div class="language- extra-class"><pre class="language-text"><code>$ cd $(docker volume inspect --format '{{ .Mountpoint }}' crater_app)/storage/logs
 $ ls
@@ -49,6 +50,6 @@ XML PHP Extension
       <a href="/" class="prev router-link-active">Introduction</a></span> <span class="next"><a href="/guide/dashboard.html">Dashboard</a>
       →
     </span></p></div> </main></div><div class="global-ui"></div></div>
-    <script src="/assets/js/app.0252786d.js" defer></script><script src="/assets/js/2.2ef0ab72.js" defer></script><script src="/assets/js/19.63d559ab.js" defer></script>
+    <script src="/assets/js/app.014eea1b.js" defer></script><script src="/assets/js/2.2ef0ab72.js" defer></script><script src="/assets/js/19.8e7e6f57.js" defer></script>
   </body>
 </html>
