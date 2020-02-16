@@ -11,3 +11,9 @@ Development & Contribution guide for Developers looking to customize crater for 
 5. run command: `php artisan key:generate` to generate a unique application key.
 4. run command: `php artisan passport:keys` to generate the required passport keys for authentication.
 5. Open the link to the domain in the browser (Example: `https://demo.craterapp.com`) and complete the installation wizard as directed.
+
+### As one command
+
+(Requires npm and composer to already be installed on the system as above)
+
+``` git clone https://github.com/bytefury/crater && npm i && composer install && cp .env.example .env && php artisan key:generate && php artisan passport:keys ```
