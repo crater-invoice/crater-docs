@@ -70,6 +70,6 @@ Please note that, Crater must be installed on a primary domain or subdomain. Ins
 - `crater.example.com` (Valid)
 - `crater.test` (Valid)
 
-### Step 3 : Open the link
+### Step 4 : Open the link
 
 Open the link to the domain in the browser (Example: `https://demo.craterapp.com`) and complete the installation wizard as directed.
