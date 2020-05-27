@@ -5,33 +5,9 @@ lang: en-US
 
 # Installation
 
-## Installation with Docker
-
-> This is only recommended to those who are familiar with Docker setups.
-  It's recommended to use a reverse proxy, a Nginx instance is included in
-  the example Docker compose file. You should configure the virtual hosts
-  by yourself.
-
-1. Install Docker on your host: https://docs.docker.com/install/
-2. Install docker-compose: https://docs.docker.com/compose/install/
-3. Clone the repository: `git clone https://github.com/bytefury/crater`
-4. Go into the repo directory and deploy using example docker-compose setup:
-```
-$ cd crater
-$ mv docker-compose.yaml.example docker-compose.yaml
-$ docker-compose up -d
-```
-5. You can check the logs with `docker-compose logs`
-6. Go to your crater domain and follow the installation wizard.
-7. For *Database Name*, *Database Username*, and *Database Password*, use `crater`.  
-  `db` for *Database Host*.
-
-If you ever want to check the Laravel logs:
-```
-$ cd $(docker volume inspect --format '{{ .Mountpoint }}' crater_app)/storage/logs
-$ ls
-$ tail -n200 log_file_name.log
-```
+* [Manual Installation](#manual-installation)
+* [Docker Installation](#docker-installation)
+* [Digital Ocean (Docker)](#digital-ocean-docker)
 
 ## Manual Installation
 
@@ -51,7 +27,7 @@ XML PHP Extension
 
 ### Step 1 : Download
 
-[Download](http://craterapp.com/downloads) the Crater package.
+[Download](http://craterapp.com/downloads) the latest Crater package.
 
 Alternatively, If you are a developer, follow the installation steps for your project on [this Link](./developer-guide.md)
 
@@ -70,6 +46,76 @@ Please note that, Crater must be installed on a primary domain or subdomain. Ins
 - `crater.example.com` (Valid)
 - `crater.test` (Valid)
 
-### Step 3 : Open the link
+### Step 3 : Complete installation wizard
 
 Open the link to the domain in the browser (Example: `https://demo.craterapp.com`) and complete the installation wizard as directed.
+
+## Docker Installation
+
+### Step 1 : Install Docker
+
+Install Docker on your host: [https://docs.docker.com/install/](https://docs.docker.com/install/)
+
+### Step 2 : Install Docker Compose
+Install docker-compose by using this guide: [https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
+
+### Step 3 : Clone repository
+Clone the repository by running this command: `git clone https://github.com/bytefury/crater`
+
+
+### Step 4 : Run below commands
+Change your current working directory and run your app using below commands:
+
+```
+$ cd crater
+$ cp .env.example .env
+$ docker-compose up -d
+$ ./docker-compose/setup.sh
+```
+
+### Step 5 : Complete installation wizard
+Open your web browser and go to your given domain (default: [http://localhost](http://localhost)) and follow the installation wizard.
+
+On Installation wizard - Database setup, use below credentials:
+- Database Host: `db`
+- Database Name: `crater`
+- Database Username: `crater`
+- Database Password: `crater`  
+
+## Digital Ocean (Docker)
+
+### Prerequisites
+
+- Access to an Ubuntu 18.04 local machine or development server as a non-root user with sudo privileges. If you’re using a remote server, it’s advisable to have an active firewall installed. To set these up, please refer to [Initial Server Setup Guide for Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04) on Digital Ocean.
+
+- Docker installed on your server, following Steps 1 and 2 of [How To Install and Use Docker on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04).
+
+- Docker Compose must installed on your server. You can refer to this Guide: [How To Install Docker Compose on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-18-04).
+
+### Installation
+
+#### Step 1 : Clone repository
+Clone the repository by running these commands: 
+```
+cd ~
+git clone https://github.com/bytefury/crater
+```
+
+#### Step 2 : Run below commands
+Change your current working directory and run your app using below commands:
+
+```
+$ cd crater
+$ cp .env.example .env
+$ docker-compose up -d
+$ ./docker-compose/setup.sh
+```
+
+#### Step 3 : Complete installation wizard
+Open your web browser and go to your given domain (default: [http://localhost](http://localhost)) and follow the installation wizard.
+
+On Installation wizard - Database setup, use below credentials:
+- Database Host: `db`
+- Database Name: `crater`
+- Database Username: `crater`
+- Database Password: `crater`  
