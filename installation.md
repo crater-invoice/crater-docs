@@ -112,7 +112,7 @@ $ ./docker-compose/setup.sh
 ```
 
 #### Step 3 : Complete installation wizard
-Open your web browser and go to your given domain (default: [http://localhost](http://localhost)) and follow the installation wizard.
+Open your web browser and go to your given domain and follow the installation wizard.
 
 On Installation wizard - Database setup, use below credentials:
 - Database Host: `db`
