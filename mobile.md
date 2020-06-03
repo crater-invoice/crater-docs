@@ -1,6 +1,6 @@
 # Mobile Apps
 
-You can use Crater [IOS](https://play.google.com/store/apps/details?id=com.craterapp.app&hl=en_IN) and [Android](https://play.google.com/store/apps/details?id=com.craterapp.app) Apps to manage your own self-hosted Crater Web Application.
+You can use Crater [IOS](https://apps.apple.com/ae/app/crater-invoice/id1489169767) and [Android](https://play.google.com/store/apps/details?id=com.craterapp.app) Apps to manage your own self-hosted Crater Web Application.
 
 When you open the mobile app for the first time, you will see the below screen which allows you to connect the mobile app to your self-hosted web application.
 
