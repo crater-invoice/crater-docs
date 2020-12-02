@@ -20,14 +20,12 @@ Please run `php -v` command to make sure that you're on the minimum supported ve
 Run below commands in given order:
 
 ```
-composer update
+composer update laravel/framework
 
 php artisan crater:update
-
-composer dump-autoload
-
-php artisan db:seed --class=Version400
 ```
+
+Please note that you will need to run `php artisan crater:update` twice in order to update from 3.1.1 to 4.0.0
 
 ### Step 4: Add Required Environment Variables
 
@@ -151,5 +149,4 @@ SESSION_DOMAIN=localhost
 
 ```
 php artisan migrate
-php artisan db:seed --class=Version400
 ```

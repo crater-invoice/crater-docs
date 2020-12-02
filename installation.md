@@ -5,16 +5,16 @@ lang: en-US
 
 # Installation
 
-* [Manual Installation](#manual-installation)
-* [Docker Installation](#docker-installation)
-* [Digital Ocean (Docker)](#digital-ocean-docker)
+- [Manual Installation](#manual-installation)
+- [Docker Installation](#docker-installation)
+- [Digital Ocean (Docker)](#digital-ocean-docker)
 
 ## Manual Installation
 
 ### Requirements
 
 ```
-PHP >= 7.2.0
+PHP >= 7.4.0
 BCMath PHP Extension
 Ctype PHP Extension
 JSON PHP Extension
@@ -37,9 +37,10 @@ Upload the downloaded zip file to your Server and unzip it, you should see the C
 
 ### Step 3 : Point the domain to the uploaded folder
 
-Point your domain or subdomain to the `public` directory inside the Crater folder. 
+Point your domain or subdomain to the `public` directory inside the Crater folder.
 
 Please note that, Crater must be installed on a primary domain or subdomain. Installing on a sub-folder will not work, for example:
+
 - `example.com/craterapp` (Invalid)
 - `localhost/crater` (Invalid)
 - `example.com` (Valid)
@@ -57,13 +58,15 @@ Open the link to the domain in the browser (Example: `https://demo.craterapp.com
 Install Docker on your host: [https://docs.docker.com/install/](https://docs.docker.com/install/)
 
 ### Step 2 : Install Docker Compose
+
 Install docker-compose by using this guide: [https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
 
 ### Step 3 : Clone repository
+
 Clone the repository by running this command: `git clone https://github.com/bytefury/crater`
 
-
 ### Step 4 : Run below commands
+
 Change your current working directory and run your app using below commands:
 
 ```
@@ -74,13 +77,15 @@ $ ./docker-compose/setup.sh
 ```
 
 ### Step 5 : Complete installation wizard
+
 Open your web browser and go to your given domain (default: [http://localhost](http://localhost)) and follow the installation wizard.
 
 On Installation wizard - Database setup, use below credentials:
+
 - Database Host: `db`
 - Database Name: `crater`
 - Database Username: `crater`
-- Database Password: `crater`  
+- Database Password: `crater`
 
 ## Digital Ocean (Docker)
 
@@ -95,13 +100,16 @@ On Installation wizard - Database setup, use below credentials:
 ### Installation
 
 #### Step 1 : Clone repository
-Clone the repository by running these commands: 
+
+Clone the repository by running these commands:
+
 ```
 cd ~
 git clone https://github.com/bytefury/crater
 ```
 
 #### Step 2 : Run below commands
+
 Change your current working directory and run your app using below commands:
 
 ```
@@ -112,10 +120,12 @@ $ ./docker-compose/setup.sh
 ```
 
 #### Step 3 : Complete installation wizard
+
 Open your web browser and go to your given domain and follow the installation wizard.
 
 On Installation wizard - Database setup, use below credentials:
+
 - Database Host: `db`
 - Database Name: `crater`
 - Database Username: `crater`
-- Database Password: `crater`  
+- Database Password: `crater`
