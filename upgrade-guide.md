@@ -22,7 +22,14 @@ Run below commands in given order:
 ```
 composer update laravel/framework
 
-php artisan crater:update
+php artisan crater:update // For updating to Update to 3.2.0
+
+php artisan crater:update // For updating to Update to 4.0.0
+
+php artisan migrate
+
+composer dump-autoload
+
 ```
 
 Please note that you will need to run `php artisan crater:update` twice in order to update from 3.1.1 to 4.0.0
