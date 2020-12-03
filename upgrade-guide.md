@@ -19,6 +19,23 @@ Please run `php -v` command to make sure that you're on the minimum supported ve
 
 Run below commands in given order:
 
+##### IF USING DOCKER
+
+```
+docker-compose exec app composer update laravel/framework
+
+docker-compose exec app php artisan crater:update // For updating to Update to 3.2.0
+
+docker-compose exec app php artisan crater:update // For updating to Update to 4.0.0
+
+docker-compose exec app composer dump-autoload
+
+docker-compose exec app php artisan migrate
+
+```
+
+##### WITHOUT DOCKER
+
 ```
 composer update laravel/framework
 
@@ -26,13 +43,15 @@ php artisan crater:update // For updating to Update to 3.2.0
 
 php artisan crater:update // For updating to Update to 4.0.0
 
-php artisan migrate
-
 composer dump-autoload
+
+php artisan migrate
 
 ```
 
 Please note that you will need to run `php artisan crater:update` twice in order to update from 3.1.1 to 4.0.0
+
+Also, if you receive an error after running `php artisan crater:update`, please ignore the error and continue with `composer dump-autoload` command and then migrate command.
 
 ### Step 4: Add Required Environment Variables
 
@@ -154,6 +173,16 @@ SESSION_DOMAIN=localhost
 
 ### Step 4: Run Commands
 
+Run the below command from the root folder of Crater installation.
+
 ```
 php artisan migrate
+```
+
+---
+
+If you're using Crater on Docker, then you'll need to run it like this:
+
+```
+docker-compose exec app php artisan migrate
 ```

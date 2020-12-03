@@ -47,7 +47,11 @@ Please note that, Crater must be installed on a primary domain or subdomain. Ins
 - `crater.example.com` (Valid)
 - `crater.test` (Valid)
 
-### Step 3 : Complete installation wizard
+### Step 3: Fix File Permissions
+
+In your crater root folder, run command: `chmod -R 775 ./`
+
+### Step 4 : Complete installation wizard
 
 Open the link to the domain in the browser (Example: `https://demo.craterapp.com`) and complete the installation wizard as directed.
 
