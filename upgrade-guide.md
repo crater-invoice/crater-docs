@@ -101,6 +101,10 @@ SANCTUM_STATEFUL_DOMAINS=localhost:8080
 SESSION_DOMAIN=localhost
 ```
 
+That's it! You can now open up the app in browser and test it out.
+
+Note that, If you get "Unauthenticated" error when logging in. Make sure to recheck the steps mentioned in STEP 4 to add the environment variables correctly.
+
 ## Manual Update
 
 The preferred method to update is [Using Auto-Installer](#using-auto-installer) but in case your application stops working after running the auto-installer or if the installation fails for some reason, you can follow the below steps carefully to update your app to `4.0.0`
@@ -186,3 +190,7 @@ If you're using Crater on Docker, then you'll need to run it like this:
 ```
 docker-compose exec app php artisan migrate
 ```
+
+---
+
+That's it! You are done.
