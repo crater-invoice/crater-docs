@@ -112,18 +112,25 @@ cd ~
 git clone https://github.com/bytefury/crater
 ```
 
-#### Step 2 : Run below commands
+#### Step 2 : Setup docker containers
 
-Change your current working directory and run your app using below commands:
+Change your current working directory and start containers using the given commands below:
 
 ```
 $ cd crater
 $ cp .env.example .env
 $ docker-compose up -d
+```
+
+#### Step 3 : Setup docker containers
+
+Now wait for a few minutes until the containers are built and started. After that run the below script command to install composer dependencies & generate unique application key:
+
+```
 $ ./docker-compose/setup.sh
 ```
 
-#### Step 3 : Complete installation wizard
+#### Step 4 : Complete installation wizard
 
 Open your web browser and go to your given domain and follow the installation wizard.
 
