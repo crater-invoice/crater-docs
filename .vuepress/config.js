@@ -73,6 +73,7 @@ module.exports = {
           '/guide/expenses.md',
           '/guide/taxes.md',
           '/guide/custom-fields.md',
+          '/guide/custom-templates.md',
           '/guide/file-disk.md',
           '/guide/backups.md',
           '/guide/customization.md',
