@@ -69,6 +69,7 @@ module.exports = {
           '/guide/items.md',
           '/guide/estimates.md',
           '/guide/invoices.md',
+          '/guide/recurring-invoices.md',
           '/guide/payments.md',
           '/guide/expenses.md',
           '/guide/taxes.md',

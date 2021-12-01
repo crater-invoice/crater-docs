@@ -11,6 +11,7 @@ Web Application is made using Laravel & VueJS while the Mobile Apps are built us
 - [Items](./guide/items.md)
 - [Estimates](./guide/estimates.md)
 - [Invoices](./guide/invoices.md)
+- [Recurring-Invoices](./guide/recurring-invoices.md)
 - [Payments](./guide/payments.md)
 - [Expenses](./guide/expenses.md)
 - [Taxes](./guide/taxes.md)
