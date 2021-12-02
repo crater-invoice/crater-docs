@@ -67,7 +67,7 @@ Install docker-compose by using this guide: [https://docs.docker.com/compose/ins
 
 ### Step 3 : Clone repository
 
-Clone the repository by running this command: `git clone https://github.com/bytefury/crater`
+Clone the repository by running this command: `git clone https://github.com/crater-invoice/crater`
 
 ### Step 4 : Run below commands
 
@@ -109,7 +109,7 @@ Clone the repository by running these commands:
 
 ```
 cd ~
-git clone https://github.com/bytefury/crater
+git clone https://github.com/crater-invoice/crater
 ```
 
 #### Step 2 : Setup docker containers

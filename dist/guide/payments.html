@@ -1,46 +1,229 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Payments</title>
-    <meta name="generator" content="VuePress 1.7.1">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/images/favicons/site.webmanifest">
-    <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5851d8">
-    <link rel="shortcut icon" href="/images/favicons/favicon.ico">
-    <meta name="description" content="Crater is an open-source app made in Laravel, VueJS & React Native that helps you track expenses, payments & create professional invoices & estimates">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-    
-    <link rel="preload" href="/assets/css/0.styles.630da3e9.css" as="style"><link rel="preload" href="/assets/js/app.498f4440.js" as="script"><link rel="preload" href="/assets/js/2.a4817c3a.js" as="script"><link rel="preload" href="/assets/js/22.0025376e.js" as="script"><link rel="prefetch" href="/assets/js/10.3afff090.js"><link rel="prefetch" href="/assets/js/11.984a640c.js"><link rel="prefetch" href="/assets/js/12.57d22021.js"><link rel="prefetch" href="/assets/js/13.66101843.js"><link rel="prefetch" href="/assets/js/14.1bd7b2ff.js"><link rel="prefetch" href="/assets/js/15.707a454b.js"><link rel="prefetch" href="/assets/js/16.e9133101.js"><link rel="prefetch" href="/assets/js/17.0a2acfeb.js"><link rel="prefetch" href="/assets/js/18.4d6c414d.js"><link rel="prefetch" href="/assets/js/19.10b77164.js"><link rel="prefetch" href="/assets/js/20.2b24a5a7.js"><link rel="prefetch" href="/assets/js/21.041c58a8.js"><link rel="prefetch" href="/assets/js/23.75b2fc00.js"><link rel="prefetch" href="/assets/js/24.8ed4d3cb.js"><link rel="prefetch" href="/assets/js/25.a71077cc.js"><link rel="prefetch" href="/assets/js/26.e9dab2d7.js"><link rel="prefetch" href="/assets/js/27.887e1db7.js"><link rel="prefetch" href="/assets/js/28.33b1e6c8.js"><link rel="prefetch" href="/assets/js/29.6dfb8014.js"><link rel="prefetch" href="/assets/js/3.bf6d066f.js"><link rel="prefetch" href="/assets/js/4.6b31bbd2.js"><link rel="prefetch" href="/assets/js/5.01f57dee.js"><link rel="prefetch" href="/assets/js/6.4069f5e0.js"><link rel="prefetch" href="/assets/js/7.84f2fcf7.js"><link rel="prefetch" href="/assets/js/8.962b1f86.js"><link rel="prefetch" href="/assets/js/9.15669324.js">
-    <link rel="stylesheet" href="/assets/css/0.styles.630da3e9.css">
-  </head>
-  <body>
-    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/images/crater-logo.png" alt="" class="logo"> <!----></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
-  Home
-</a></div><div class="nav-item"><a href="https://github.com/bytefury/crater" target="_blank" rel="noopener noreferrer" class="nav-link external">
-  Github
-  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://craterapp.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
-  Website
-  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
-  Home
-</a></div><div class="nav-item"><a href="https://github.com/bytefury/crater" target="_blank" rel="noopener noreferrer" class="nav-link external">
-  Github
-  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://craterapp.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
-  Website
-  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/" aria-current="page" class="sidebar-link">Introduction</a></li><li><a href="/installation.html" class="sidebar-link">Installation</a></li><li><a href="/upgrade-guide.html" class="sidebar-link">Upgrade Guide for 4.0.0</a></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>User Guide</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/dashboard.html" class="sidebar-link">Dashboard</a></li><li><a href="/guide/customers.html" class="sidebar-link">Customers</a></li><li><a href="/guide/items.html" class="sidebar-link">Items</a></li><li><a href="/guide/estimates.html" class="sidebar-link">Estimates</a></li><li><a href="/guide/invoices.html" class="sidebar-link">Invoices</a></li><li><a href="/guide/recurring-invoices.html" class="sidebar-link">Recurring Invoices</a></li><li><a href="/guide/payments.html" aria-current="page" class="active sidebar-link">Payments</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/payments.html#add-new-payment" class="sidebar-link">Add New Payment</a></li><li class="sidebar-sub-header"><a href="/guide/payments.html#list-payments" class="sidebar-link">List Payments</a></li></ul></li><li><a href="/guide/expenses.html" class="sidebar-link">Expenses</a></li><li><a href="/guide/taxes.html" class="sidebar-link">Taxes</a></li><li><a href="/guide/custom-fields.html" class="sidebar-link">Custom Fields</a></li><li><a href="/guide/custom-templates.html" class="sidebar-link">Custom Templates</a></li><li><a href="/guide/file-disk.html" class="sidebar-link">File Disk</a></li><li><a href="/guide/backups.html" class="sidebar-link">Backups</a></li><li><a href="/guide/customization.html" class="sidebar-link">Customization</a></li><li><a href="/guide/reports.html" class="sidebar-link">Reports</a></li><li><a href="/guide/settings.html" class="sidebar-link">Settings</a></li></ul></section></li><li><a href="/mobile.html" class="sidebar-link">Mobile Apps</a></li><li><a href="/developer-guide.html" class="sidebar-link">Developer Guide</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="payments"><a href="#payments" class="header-anchor">#</a> Payments</h1> <p>Payments are basically entries for Payments that you receieved from your Customers. You can access the payments tab from the sidebar menu.</p> <h2 id="add-new-payment"><a href="#add-new-payment" class="header-anchor">#</a> Add New Payment</h2> <p>You can add new payment entry by selecting a date, customer, invoice (optional) and amount.</p> <h4 id="payment-fields"><a href="#payment-fields" class="header-anchor">#</a> Payment Fields:</h4> <ul><li><strong>Date</strong>: Date of the payment.</li> <li><strong>Payment Number</strong>: Unique Identification number for the Payment entry. Its automatically generated each time you create a new payment entry.</li> <li><strong>Customer</strong>: Your customer, from whom you received the payment.</li> <li><strong>Invoice(optional)</strong>: Invoice towards which you received the payment.</li> <li><strong>Amount</strong>: Total Amount of the payment.</li> <li><strong>Payment Mode(optional)</strong>: Mode of payment (Cash, Check, Credit Card or Bank Transfer )</li> <li><strong>Notes(optional)</strong>: Extra details about the payment.</li></ul> <div class="custom-block wrapper"><p><img src="/images/payments-new.png" alt="New Payment Page"></p></div> <h2 id="list-payments"><a href="#list-payments" class="header-anchor">#</a> List Payments</h2> <p>All created Payment entries are shown on the Payments page and you can easily edit or delete them as well. You can also use filters to quickly search for a particular payment entry by its selected customer, number &amp; mode.</p> <div class="custom-block wrapper"><p><img src="/images/payments.png" alt="Payments Page"></p></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
-      ←
-      <a href="/guide/recurring-invoices.html" class="prev">
-        Recurring Invoices
-      </a></span> <span class="next"><a href="/guide/expenses.html">
-        Expenses
-      </a>
-      →
-    </span></p></div> </main></div><div class="global-ui"></div></div>
-    <script src="/assets/js/app.498f4440.js" defer></script><script src="/assets/js/2.a4817c3a.js" defer></script><script src="/assets/js/22.0025376e.js" defer></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Payments</title>
+  <meta name="generator" content="VuePress 1.7.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/images/favicons/site.webmanifest">
+  <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5851d8">
+  <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+  <meta name="description"
+    content="Crater is an open-source app made in Laravel, VueJS & React Native that helps you track expenses, payments & create professional invoices & estimates">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="preload" href="/assets/css/0.styles.630da3e9.css" as="style">
+  <link rel="preload" href="/assets/js/app.498f4440.js" as="script">
+  <link rel="preload" href="/assets/js/2.a4817c3a.js" as="script">
+  <link rel="preload" href="/assets/js/22.0025376e.js" as="script">
+  <link rel="prefetch" href="/assets/js/10.3afff090.js">
+  <link rel="prefetch" href="/assets/js/11.984a640c.js">
+  <link rel="prefetch" href="/assets/js/12.57d22021.js">
+  <link rel="prefetch" href="/assets/js/13.66101843.js">
+  <link rel="prefetch" href="/assets/js/14.1bd7b2ff.js">
+  <link rel="prefetch" href="/assets/js/15.707a454b.js">
+  <link rel="prefetch" href="/assets/js/16.e9133101.js">
+  <link rel="prefetch" href="/assets/js/17.0a2acfeb.js">
+  <link rel="prefetch" href="/assets/js/18.4d6c414d.js">
+  <link rel="prefetch" href="/assets/js/19.10b77164.js">
+  <link rel="prefetch" href="/assets/js/20.2b24a5a7.js">
+  <link rel="prefetch" href="/assets/js/21.041c58a8.js">
+  <link rel="prefetch" href="/assets/js/23.75b2fc00.js">
+  <link rel="prefetch" href="/assets/js/24.8ed4d3cb.js">
+  <link rel="prefetch" href="/assets/js/25.a71077cc.js">
+  <link rel="prefetch" href="/assets/js/26.e9dab2d7.js">
+  <link rel="prefetch" href="/assets/js/27.887e1db7.js">
+  <link rel="prefetch" href="/assets/js/28.33b1e6c8.js">
+  <link rel="prefetch" href="/assets/js/29.6dfb8014.js">
+  <link rel="prefetch" href="/assets/js/3.bf6d066f.js">
+  <link rel="prefetch" href="/assets/js/4.6b31bbd2.js">
+  <link rel="prefetch" href="/assets/js/5.01f57dee.js">
+  <link rel="prefetch" href="/assets/js/6.4069f5e0.js">
+  <link rel="prefetch" href="/assets/js/7.84f2fcf7.js">
+  <link rel="prefetch" href="/assets/js/8.962b1f86.js">
+  <link rel="prefetch" href="/assets/js/9.15669324.js">
+  <link rel="stylesheet" href="/assets/css/0.styles.630da3e9.css">
+</head>
+
+<body>
+  <div id="app" data-server-rendered="true">
+    <div class="theme-container">
+      <header class="navbar">
+        <div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img"
+            viewBox="0 0 448 512" class="icon">
+            <path fill="currentColor"
+              d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z">
+            </path>
+          </svg></div> <a href="/" class="home-link router-link-active"><img src="/images/crater-logo.png" alt=""
+            class="logo">
+          <!---->
+        </a>
+        <div class="links">
+          <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value="">
+            <!---->
+          </div>
+          <nav class="nav-links can-hide">
+            <div class="nav-item"><a href="/" class="nav-link">
+                Home
+              </a></div>
+            <div class="nav-item"><a href="https://github.com/crater-invoice/crater" target="_blank"
+                rel="noopener noreferrer" class="nav-link external">
+                Github
+                <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px"
+                    viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
+                    <path fill="currentColor"
+                      d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+                    </path>
+                    <polygon fill="currentColor"
+                      points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+                    </polygon>
+                  </svg> <span class="sr-only">(opens new window)</span></span></a></div>
+            <div class="nav-item"><a href="https://craterapp.com" target="_blank" rel="noopener noreferrer"
+                class="nav-link external">
+                Website
+                <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px"
+                    viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
+                    <path fill="currentColor"
+                      d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+                    </path>
+                    <polygon fill="currentColor"
+                      points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+                    </polygon>
+                  </svg> <span class="sr-only">(opens new window)</span></span></a></div>
+            <!---->
+          </nav>
+        </div>
+      </header>
+      <div class="sidebar-mask"></div>
+      <aside class="sidebar">
+        <nav class="nav-links">
+          <div class="nav-item"><a href="/" class="nav-link">
+              Home
+            </a></div>
+          <div class="nav-item"><a href="https://github.com/crater-invoice/crater" target="_blank"
+              rel="noopener noreferrer" class="nav-link external">
+              Github
+              <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px"
+                  viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
+                  <path fill="currentColor"
+                    d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+                  </path>
+                  <polygon fill="currentColor"
+                    points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+                  </polygon>
+                </svg> <span class="sr-only">(opens new window)</span></span></a></div>
+          <div class="nav-item"><a href="https://craterapp.com" target="_blank" rel="noopener noreferrer"
+              class="nav-link external">
+              Website
+              <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px"
+                  viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
+                  <path fill="currentColor"
+                    d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+                  </path>
+                  <polygon fill="currentColor"
+                    points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+                  </polygon>
+                </svg> <span class="sr-only">(opens new window)</span></span></a></div>
+          <!---->
+        </nav>
+        <ul class="sidebar-links">
+          <li><a href="/" aria-current="page" class="sidebar-link">Introduction</a></li>
+          <li><a href="/installation.html" class="sidebar-link">Installation</a></li>
+          <li><a href="/upgrade-guide.html" class="sidebar-link">Upgrade Guide for 4.0.0</a></li>
+          <li>
+            <section class="sidebar-group depth-0">
+              <p class="sidebar-heading open"><span>User Guide</span>
+                <!---->
+              </p>
+              <ul class="sidebar-links sidebar-group-items">
+                <li><a href="/guide/dashboard.html" class="sidebar-link">Dashboard</a></li>
+                <li><a href="/guide/customers.html" class="sidebar-link">Customers</a></li>
+                <li><a href="/guide/items.html" class="sidebar-link">Items</a></li>
+                <li><a href="/guide/estimates.html" class="sidebar-link">Estimates</a></li>
+                <li><a href="/guide/invoices.html" class="sidebar-link">Invoices</a></li>
+                <li><a href="/guide/recurring-invoices.html" class="sidebar-link">Recurring Invoices</a></li>
+                <li><a href="/guide/payments.html" aria-current="page" class="active sidebar-link">Payments</a>
+                  <ul class="sidebar-sub-headers">
+                    <li class="sidebar-sub-header"><a href="/guide/payments.html#add-new-payment"
+                        class="sidebar-link">Add New Payment</a></li>
+                    <li class="sidebar-sub-header"><a href="/guide/payments.html#list-payments"
+                        class="sidebar-link">List Payments</a></li>
+                  </ul>
+                </li>
+                <li><a href="/guide/expenses.html" class="sidebar-link">Expenses</a></li>
+                <li><a href="/guide/taxes.html" class="sidebar-link">Taxes</a></li>
+                <li><a href="/guide/custom-fields.html" class="sidebar-link">Custom Fields</a></li>
+                <li><a href="/guide/custom-templates.html" class="sidebar-link">Custom Templates</a></li>
+                <li><a href="/guide/file-disk.html" class="sidebar-link">File Disk</a></li>
+                <li><a href="/guide/backups.html" class="sidebar-link">Backups</a></li>
+                <li><a href="/guide/customization.html" class="sidebar-link">Customization</a></li>
+                <li><a href="/guide/reports.html" class="sidebar-link">Reports</a></li>
+                <li><a href="/guide/settings.html" class="sidebar-link">Settings</a></li>
+              </ul>
+            </section>
+          </li>
+          <li><a href="/mobile.html" class="sidebar-link">Mobile Apps</a></li>
+          <li><a href="/developer-guide.html" class="sidebar-link">Developer Guide</a></li>
+        </ul>
+      </aside>
+      <main class="page">
+        <div class="theme-default-content content__default">
+          <h1 id="payments"><a href="#payments" class="header-anchor">#</a> Payments</h1>
+          <p>Payments are basically entries for Payments that you receieved from your Customers. You can access the
+            payments tab from the sidebar menu.</p>
+          <h2 id="add-new-payment"><a href="#add-new-payment" class="header-anchor">#</a> Add New Payment</h2>
+          <p>You can add new payment entry by selecting a date, customer, invoice (optional) and amount.</p>
+          <h4 id="payment-fields"><a href="#payment-fields" class="header-anchor">#</a> Payment Fields:</h4>
+          <ul>
+            <li><strong>Date</strong>: Date of the payment.</li>
+            <li><strong>Payment Number</strong>: Unique Identification number for the Payment entry. Its automatically
+              generated each time you create a new payment entry.</li>
+            <li><strong>Customer</strong>: Your customer, from whom you received the payment.</li>
+            <li><strong>Invoice(optional)</strong>: Invoice towards which you received the payment.</li>
+            <li><strong>Amount</strong>: Total Amount of the payment.</li>
+            <li><strong>Payment Mode(optional)</strong>: Mode of payment (Cash, Check, Credit Card or Bank Transfer )
+            </li>
+            <li><strong>Notes(optional)</strong>: Extra details about the payment.</li>
+          </ul>
+          <div class="custom-block wrapper">
+            <p><img src="/images/payments-new.png" alt="New Payment Page"></p>
+          </div>
+          <h2 id="list-payments"><a href="#list-payments" class="header-anchor">#</a> List Payments</h2>
+          <p>All created Payment entries are shown on the Payments page and you can easily edit or delete them as well.
+            You can also use filters to quickly search for a particular payment entry by its selected customer, number
+            &amp; mode.</p>
+          <div class="custom-block wrapper">
+            <p><img src="/images/payments.png" alt="Payments Page"></p>
+          </div>
+        </div>
+        <footer class="page-edit">
+          <!---->
+          <!---->
+        </footer>
+        <div class="page-nav">
+          <p class="inner"><span class="prev">
+              ←
+              <a href="/guide/recurring-invoices.html" class="prev">
+                Recurring Invoices
+              </a></span> <span class="next"><a href="/guide/expenses.html">
+                Expenses
+              </a>
+              →
+            </span></p>
+        </div>
+      </main>
+    </div>
+    <div class="global-ui"></div>
+  </div>
+  <script src="/assets/js/app.498f4440.js" defer></script>
+  <script src="/assets/js/2.a4817c3a.js" defer></script>
+  <script src="/assets/js/22.0025376e.js" defer></script>
+</body>
+
 </html>
