@@ -1,264 +1,46 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Taxes</title>
-  <meta name="generator" content="VuePress 1.7.1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
-  <link rel="manifest" href="/images/favicons/site.webmanifest">
-  <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5851d8">
-  <link rel="shortcut icon" href="/images/favicons/favicon.ico">
-  <meta name="description"
-    content="Crater is an open-source app made in Laravel, VueJS & React Native that helps you track expenses, payments & create professional invoices & estimates">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
-
-  <link rel="preload" href="/assets/css/0.styles.630da3e9.css" as="style">
-  <link rel="preload" href="/assets/js/app.498f4440.js" as="script">
-  <link rel="preload" href="/assets/js/2.a4817c3a.js" as="script">
-  <link rel="preload" href="/assets/js/26.e9dab2d7.js" as="script">
-  <link rel="prefetch" href="/assets/js/10.3afff090.js">
-  <link rel="prefetch" href="/assets/js/11.984a640c.js">
-  <link rel="prefetch" href="/assets/js/12.57d22021.js">
-  <link rel="prefetch" href="/assets/js/13.66101843.js">
-  <link rel="prefetch" href="/assets/js/14.1bd7b2ff.js">
-  <link rel="prefetch" href="/assets/js/15.707a454b.js">
-  <link rel="prefetch" href="/assets/js/16.e9133101.js">
-  <link rel="prefetch" href="/assets/js/17.0a2acfeb.js">
-  <link rel="prefetch" href="/assets/js/18.4d6c414d.js">
-  <link rel="prefetch" href="/assets/js/19.10b77164.js">
-  <link rel="prefetch" href="/assets/js/20.2b24a5a7.js">
-  <link rel="prefetch" href="/assets/js/21.041c58a8.js">
-  <link rel="prefetch" href="/assets/js/22.0025376e.js">
-  <link rel="prefetch" href="/assets/js/23.75b2fc00.js">
-  <link rel="prefetch" href="/assets/js/24.8ed4d3cb.js">
-  <link rel="prefetch" href="/assets/js/25.a71077cc.js">
-  <link rel="prefetch" href="/assets/js/27.887e1db7.js">
-  <link rel="prefetch" href="/assets/js/28.33b1e6c8.js">
-  <link rel="prefetch" href="/assets/js/29.6dfb8014.js">
-  <link rel="prefetch" href="/assets/js/3.bf6d066f.js">
-  <link rel="prefetch" href="/assets/js/4.6b31bbd2.js">
-  <link rel="prefetch" href="/assets/js/5.01f57dee.js">
-  <link rel="prefetch" href="/assets/js/6.4069f5e0.js">
-  <link rel="prefetch" href="/assets/js/7.84f2fcf7.js">
-  <link rel="prefetch" href="/assets/js/8.962b1f86.js">
-  <link rel="prefetch" href="/assets/js/9.15669324.js">
-  <link rel="stylesheet" href="/assets/css/0.styles.630da3e9.css">
-</head>
-
-<body>
-  <div id="app" data-server-rendered="true">
-    <div class="theme-container">
-      <header class="navbar">
-        <div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img"
-            viewBox="0 0 448 512" class="icon">
-            <path fill="currentColor"
-              d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z">
-            </path>
-          </svg></div> <a href="/" class="home-link router-link-active"><img src="/images/crater-logo.png" alt=""
-            class="logo">
-          <!---->
-        </a>
-        <div class="links">
-          <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value="">
-            <!---->
-          </div>
-          <nav class="nav-links can-hide">
-            <div class="nav-item"><a href="/" class="nav-link">
-                Home
-              </a></div>
-            <div class="nav-item"><a href="https://github.com/crater-invoice/crater" target="_blank"
-                rel="noopener noreferrer" class="nav-link external">
-                Github
-                <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px"
-                    viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
-                    <path fill="currentColor"
-                      d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
-                    </path>
-                    <polygon fill="currentColor"
-                      points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
-                    </polygon>
-                  </svg> <span class="sr-only">(opens new window)</span></span></a></div>
-            <div class="nav-item"><a href="https://craterapp.com" target="_blank" rel="noopener noreferrer"
-                class="nav-link external">
-                Website
-                <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px"
-                    viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
-                    <path fill="currentColor"
-                      d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
-                    </path>
-                    <polygon fill="currentColor"
-                      points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
-                    </polygon>
-                  </svg> <span class="sr-only">(opens new window)</span></span></a></div>
-            <!---->
-          </nav>
-        </div>
-      </header>
-      <div class="sidebar-mask"></div>
-      <aside class="sidebar">
-        <nav class="nav-links">
-          <div class="nav-item"><a href="/" class="nav-link">
-              Home
-            </a></div>
-          <div class="nav-item"><a href="https://github.com/crater-invoice/crater" target="_blank"
-              rel="noopener noreferrer" class="nav-link external">
-              Github
-              <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px"
-                  viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
-                  <path fill="currentColor"
-                    d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
-                  </path>
-                  <polygon fill="currentColor"
-                    points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
-                  </polygon>
-                </svg> <span class="sr-only">(opens new window)</span></span></a></div>
-          <div class="nav-item"><a href="https://craterapp.com" target="_blank" rel="noopener noreferrer"
-              class="nav-link external">
-              Website
-              <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px"
-                  viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
-                  <path fill="currentColor"
-                    d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
-                  </path>
-                  <polygon fill="currentColor"
-                    points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
-                  </polygon>
-                </svg> <span class="sr-only">(opens new window)</span></span></a></div>
-          <!---->
-        </nav>
-        <ul class="sidebar-links">
-          <li><a href="/" aria-current="page" class="sidebar-link">Introduction</a></li>
-          <li><a href="/installation.html" class="sidebar-link">Installation</a></li>
-          <li><a href="/upgrade-guide.html" class="sidebar-link">Upgrade Guide for 4.0.0</a></li>
-          <li>
-            <section class="sidebar-group depth-0">
-              <p class="sidebar-heading open"><span>User Guide</span>
-                <!---->
-              </p>
-              <ul class="sidebar-links sidebar-group-items">
-                <li><a href="/guide/dashboard.html" class="sidebar-link">Dashboard</a></li>
-                <li><a href="/guide/customers.html" class="sidebar-link">Customers</a></li>
-                <li><a href="/guide/items.html" class="sidebar-link">Items</a></li>
-                <li><a href="/guide/estimates.html" class="sidebar-link">Estimates</a></li>
-                <li><a href="/guide/invoices.html" class="sidebar-link">Invoices</a></li>
-                <li><a href="/guide/recurring-invoices.html" class="sidebar-link">Recurring Invoices</a></li>
-                <li><a href="/guide/payments.html" class="sidebar-link">Payments</a></li>
-                <li><a href="/guide/expenses.html" class="sidebar-link">Expenses</a></li>
-                <li><a href="/guide/taxes.html" aria-current="page" class="active sidebar-link">Taxes</a>
-                  <ul class="sidebar-sub-headers">
-                    <li class="sidebar-sub-header"><a
-                        href="/guide/taxes.html#tax-per-item-vs-tax-on-total-invoice-amount" class="sidebar-link">Tax
-                        Per-Item vs Tax on Total Invoice Amount</a></li>
-                    <li class="sidebar-sub-header"><a href="/guide/taxes.html#what-is-a-tax-type"
-                        class="sidebar-link">What is a Tax Type?</a></li>
-                    <li class="sidebar-sub-header"><a href="/guide/taxes.html#what-is-a-compound-tax"
-                        class="sidebar-link">What is a Compound Tax?</a></li>
-                  </ul>
-                </li>
-                <li><a href="/guide/custom-fields.html" class="sidebar-link">Custom Fields</a></li>
-                <li><a href="/guide/custom-templates.html" class="sidebar-link">Custom Templates</a></li>
-                <li><a href="/guide/file-disk.html" class="sidebar-link">File Disk</a></li>
-                <li><a href="/guide/backups.html" class="sidebar-link">Backups</a></li>
-                <li><a href="/guide/customization.html" class="sidebar-link">Customization</a></li>
-                <li><a href="/guide/reports.html" class="sidebar-link">Reports</a></li>
-                <li><a href="/guide/settings.html" class="sidebar-link">Settings</a></li>
-              </ul>
-            </section>
-          </li>
-          <li><a href="/mobile.html" class="sidebar-link">Mobile Apps</a></li>
-          <li><a href="/developer-guide.html" class="sidebar-link">Developer Guide</a></li>
-        </ul>
-      </aside>
-      <main class="page">
-        <div class="theme-default-content content__default">
-          <h1 id="taxes"><a href="#taxes" class="header-anchor">#</a> Taxes</h1>
-          <p>Crater makes it really easy to manage taxes. You can add multiple taxes on Total Invoice Amount or on
-            Per-Item basis.</p>
-          <p>To get started with taxes, you just need to add a new Tax Type with name of Tax &amp; Percentage on the
-            <code>Settings -&gt; Tax Types</code> page. After adding a Tax Type, you can apply the newly added tax to an
-            Invoice.</p>
-          <div class="custom-block wrapper">
-            <p><img src="/images/taxes.png" alt="Tax Types Page"></p>
-          </div>
-          <h2 id="tax-per-item-vs-tax-on-total-invoice-amount"><a href="#tax-per-item-vs-tax-on-total-invoice-amount"
-              class="header-anchor">#</a> Tax Per-Item vs Tax on Total Invoice Amount</h2>
-          <p>By default, Taxes are added on Total Invoice Amount. But you can update that setting anytime on
-            <code>Settings -&gt; Tax Types</code> page by clicking on the <code>Tax Per Item</code> toggle button.</p>
-          <p>Also, Note that <code>Tax Per Item</code> setting does not affect Invoices that have already been created.
-          </p>
-          <h2 id="what-is-a-tax-type"><a href="#what-is-a-tax-type" class="header-anchor">#</a> What is a Tax Type?</h2>
-          <p>Tax Types basically define the Percentage of tax that can be applied to an Invoice or Estimate. You can add
-            or remove Tax Types from Settings -&gt; Tax Types page.</p>
-          <p>Note that you cannot remove a Tax Type which has already been applied to an invoice or estimate.</p>
-          <h4 id="tax-type-fields"><a href="#tax-type-fields" class="header-anchor">#</a> Tax Type Fields:</h4>
-          <ul>
-            <li><strong>Name:</strong> Name of the Tax (for example: GST , VAT or PST)</li>
-            <li><strong>Percentage</strong>: Percentage of tax to be applied.</li>
-            <li><strong>Description(optional)</strong>: Percentage of tax to be applied.</li>
-            <li><strong>Compound Tax</strong>: Specifies whether a tax is a Compound Tax or not.</li>
-          </ul>
-          <h2 id="what-is-a-compound-tax"><a href="#what-is-a-compound-tax" class="header-anchor">#</a> What is a
-            Compound Tax?</h2>
-          <p>A Compound Tax, also known as a Stacked Tax, is a tax that is calculated on top of one or more Simple
-            taxes.</p>
-          <p>You can select whether a Tax is supposed to be calculated as Simple tax or Compound tax when adding a new
-            Tax Type on crater.</p>
-          <h5 id="example"><a href="#example" class="header-anchor">#</a> Example:</h5>
-          <table>
-            <thead>
-              <tr>
-                <th>Item Price</th>
-                <th>$ 100</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>GST (10%)</td>
-                <td>$ 10</td>
-              </tr>
-              <tr>
-                <td>Subtotal</td>
-                <td>$ 110</td>
-              </tr>
-              <tr>
-                <td>PST (5%)</td>
-                <td>$ 5.5</td>
-              </tr>
-              <tr>
-                <td>Total</td>
-                <td>$ 115.5</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <footer class="page-edit">
-          <!---->
-          <!---->
-        </footer>
-        <div class="page-nav">
-          <p class="inner"><span class="prev">
-              ←
-              <a href="/guide/expenses.html" class="prev">
-                Expenses
-              </a></span> <span class="next"><a href="/guide/custom-fields.html">
-                Custom Fields
-              </a>
-              →
-            </span></p>
-        </div>
-      </main>
-    </div>
-    <div class="global-ui"></div>
-  </div>
-  <script src="/assets/js/app.498f4440.js" defer></script>
-  <script src="/assets/js/2.a4817c3a.js" defer></script>
-  <script src="/assets/js/26.e9dab2d7.js" defer></script>
-</body>
-
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Taxes</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5851d8">
+    <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+    <meta name="description" content="Crater is an open-source app made in Laravel, VueJS & React Native that helps you track expenses, payments & create professional invoices & estimates">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    
+    <link rel="preload" href="/assets/css/0.styles.630da3e9.css" as="style"><link rel="preload" href="/assets/js/app.542dde1d.js" as="script"><link rel="preload" href="/assets/js/2.a4817c3a.js" as="script"><link rel="preload" href="/assets/js/26.417fa064.js" as="script"><link rel="prefetch" href="/assets/js/10.e7681e73.js"><link rel="prefetch" href="/assets/js/11.b82ea900.js"><link rel="prefetch" href="/assets/js/12.31b95506.js"><link rel="prefetch" href="/assets/js/13.c8bacd13.js"><link rel="prefetch" href="/assets/js/14.fabd40cb.js"><link rel="prefetch" href="/assets/js/15.df71ad56.js"><link rel="prefetch" href="/assets/js/16.e9133101.js"><link rel="prefetch" href="/assets/js/17.31127cd3.js"><link rel="prefetch" href="/assets/js/18.4d6c414d.js"><link rel="prefetch" href="/assets/js/19.a87461ed.js"><link rel="prefetch" href="/assets/js/20.5fb8af8b.js"><link rel="prefetch" href="/assets/js/21.ce2ddcfc.js"><link rel="prefetch" href="/assets/js/22.9f31b158.js"><link rel="prefetch" href="/assets/js/23.f5a716c8.js"><link rel="prefetch" href="/assets/js/24.022d0f24.js"><link rel="prefetch" href="/assets/js/25.79f95f08.js"><link rel="prefetch" href="/assets/js/27.0ea72578.js"><link rel="prefetch" href="/assets/js/28.1287207f.js"><link rel="prefetch" href="/assets/js/29.6dfb8014.js"><link rel="prefetch" href="/assets/js/3.bf6d066f.js"><link rel="prefetch" href="/assets/js/4.6b31bbd2.js"><link rel="prefetch" href="/assets/js/5.01f57dee.js"><link rel="prefetch" href="/assets/js/6.4069f5e0.js"><link rel="prefetch" href="/assets/js/7.0e19a1e7.js"><link rel="prefetch" href="/assets/js/8.62bee8bd.js"><link rel="prefetch" href="/assets/js/9.a6f0b7b8.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.630da3e9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/images/crater-logo.png" alt="" class="logo"> <!----></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/crater-invoice/crater" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://craterapp.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Website
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/crater-invoice/crater" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://craterapp.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Website
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/" aria-current="page" class="sidebar-link">Introduction</a></li><li><a href="/installation.html" class="sidebar-link">Installation</a></li><li><a href="/upgrade-guide.html" class="sidebar-link">Upgrade Guide for 4.0.0</a></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>User Guide</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/dashboard.html" class="sidebar-link">Dashboard</a></li><li><a href="/guide/customers.html" class="sidebar-link">Customers</a></li><li><a href="/guide/items.html" class="sidebar-link">Items</a></li><li><a href="/guide/estimates.html" class="sidebar-link">Estimates</a></li><li><a href="/guide/invoices.html" class="sidebar-link">Invoices</a></li><li><a href="/guide/recurring-invoices.html" class="sidebar-link">Recurring Invoices</a></li><li><a href="/guide/payments.html" class="sidebar-link">Payments</a></li><li><a href="/guide/expenses.html" class="sidebar-link">Expenses</a></li><li><a href="/guide/taxes.html" aria-current="page" class="active sidebar-link">Taxes</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/taxes.html#tax-per-item-vs-tax-on-total-invoice-amount" class="sidebar-link">Tax Per-Item vs Tax on Total Invoice Amount</a></li><li class="sidebar-sub-header"><a href="/guide/taxes.html#what-is-a-tax-type" class="sidebar-link">What is a Tax Type?</a></li><li class="sidebar-sub-header"><a href="/guide/taxes.html#what-is-a-compound-tax" class="sidebar-link">What is a Compound Tax?</a></li></ul></li><li><a href="/guide/custom-fields.html" class="sidebar-link">Custom Fields</a></li><li><a href="/guide/custom-templates.html" class="sidebar-link">Custom Templates</a></li><li><a href="/guide/file-disk.html" class="sidebar-link">File Disk</a></li><li><a href="/guide/backups.html" class="sidebar-link">Backups</a></li><li><a href="/guide/customization.html" class="sidebar-link">Customization</a></li><li><a href="/guide/reports.html" class="sidebar-link">Reports</a></li><li><a href="/guide/settings.html" class="sidebar-link">Settings</a></li></ul></section></li><li><a href="/mobile.html" class="sidebar-link">Mobile Apps</a></li><li><a href="/developer-guide.html" class="sidebar-link">Developer Guide</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="taxes"><a href="#taxes" class="header-anchor">#</a> Taxes</h1> <p>Crater makes it really easy to manage taxes. You can add multiple taxes on Total Invoice Amount or on Per-Item basis.</p> <p>To get started with taxes, you just need to add a new Tax Type with name of Tax &amp; Percentage on the <code>Settings -&gt; Tax Types</code> page. After adding a Tax Type, you can apply the newly added tax to an Invoice.</p> <div class="custom-block wrapper"><p><img src="/images/taxes.png" alt="Tax Types Page"></p></div> <h2 id="tax-per-item-vs-tax-on-total-invoice-amount"><a href="#tax-per-item-vs-tax-on-total-invoice-amount" class="header-anchor">#</a> Tax Per-Item vs Tax on Total Invoice Amount</h2> <p>By default, Taxes are added on Total Invoice Amount. But you can update that setting anytime on <code>Settings -&gt; Tax Types</code> page by clicking on the <code>Tax Per Item</code> toggle button.</p> <p>Also, Note that <code>Tax Per Item</code> setting does not affect Invoices that have already been created.</p> <h2 id="what-is-a-tax-type"><a href="#what-is-a-tax-type" class="header-anchor">#</a> What is a Tax Type?</h2> <p>Tax Types basically define the Percentage of tax that can be applied to an Invoice or Estimate. You can add or remove Tax Types from Settings -&gt; Tax Types page.</p> <p>Note that you cannot remove a Tax Type which has already been applied to an invoice or estimate.</p> <h4 id="tax-type-fields"><a href="#tax-type-fields" class="header-anchor">#</a> Tax Type Fields:</h4> <ul><li><strong>Name:</strong> Name of the Tax (for example: GST , VAT or PST)</li> <li><strong>Percentage</strong>: Percentage of tax to be applied.</li> <li><strong>Description(optional)</strong>: Percentage of tax to be applied.</li> <li><strong>Compound Tax</strong>: Specifies whether a tax is a Compound Tax or not.</li></ul> <h2 id="what-is-a-compound-tax"><a href="#what-is-a-compound-tax" class="header-anchor">#</a> What is a Compound Tax?</h2> <p>A Compound Tax, also known as a Stacked Tax, is a tax that is calculated on top of one or more Simple taxes.</p> <p>You can select whether a Tax is supposed to be calculated as Simple tax or Compound tax when adding a new Tax Type on crater.</p> <h5 id="example"><a href="#example" class="header-anchor">#</a> Example:</h5> <table><thead><tr><th>Item Price</th> <th>$ 100</th></tr></thead> <tbody><tr><td>GST (10%)</td> <td>$ 10</td></tr> <tr><td>Subtotal</td> <td>$ 110</td></tr> <tr><td>PST (5%)</td> <td>$ 5.5</td></tr> <tr><td>Total</td> <td>$ 115.5</td></tr></tbody></table></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/guide/expenses.html" class="prev">
+        Expenses
+      </a></span> <span class="next"><a href="/guide/custom-fields.html">
+        Custom Fields
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.542dde1d.js" defer></script><script src="/assets/js/2.a4817c3a.js" defer></script><script src="/assets/js/26.417fa064.js" defer></script>
+  </body>
 </html>
