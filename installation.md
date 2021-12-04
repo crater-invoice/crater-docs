@@ -112,7 +112,22 @@ cd ~
 git clone https://github.com/crater-invoice/crater
 ```
 
-#### Step 2 : Setup docker containers
+#### Step 2: Verify Permissions 
+
+Please verify that your current user's UID matches with given UID on [docker-compose.yml](https://github.com/crater-invoice/crater/blob/master/docker-compose.yml#L8) file in the application's root folder:
+
+````
+    build:
+      args:
+        user: crater-user
+        uid: 1000
+````
+
+If it doesn't match, Update the compose.yml file before going ahead with step 3.
+
+Hint: You can get the UID by running `id` command in the terminal (Note: If you don't do this step correctly, then you may get an error on step 4).
+
+#### Step 3 : Setup docker containers
 
 Change your current working directory and start containers using the given commands below:
 
@@ -122,7 +137,7 @@ $ cp .env.example .env
 $ docker-compose up -d
 ```
 
-#### Step 3 : Setup docker containers
+#### Step 4 : Install composer depencies & generate app key
 
 Now wait for a few minutes until the containers are built and started. After that run the below script command to install composer dependencies & generate unique application key:
 
@@ -130,7 +145,7 @@ Now wait for a few minutes until the containers are built and started. After tha
 $ ./docker-compose/setup.sh
 ```
 
-#### Step 4 : Complete installation wizard
+#### Step 5 : Complete installation wizard
 
 Open your web browser and go to your given domain and follow the installation wizard.
 
