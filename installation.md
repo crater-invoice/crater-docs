@@ -17,12 +17,18 @@ lang: en-US
 PHP >= 7.4.0
 BCMath PHP Extension
 Ctype PHP Extension
+cURL PHP Extension
+DOM PHP Extension
+Filter PHP Extension
+Iconv PHP Extension
 JSON PHP Extension
 Mbstring PHP Extension
 OpenSSL PHP Extension
 PDO PHP Extension
+Session PHP Extension
 Tokenizer PHP Extension
 XML PHP Extension
+ZIP PHP Extension
 ```
 
 ### Step 1 : Download
