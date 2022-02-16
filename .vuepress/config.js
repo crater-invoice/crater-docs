@@ -52,7 +52,7 @@ module.exports = {
     logo: '/images/crater-logo.png',
     nav: [
       { text: 'Home', link: '/' },
-      // { text: 'API Docs', link: 'https://github.com/crater-invoice/crater' },
+      { text: 'API Docs', link: 'http://api-docs.craterapp.com/' },
       { text: 'Github', link: 'https://github.com/crater-invoice/crater' },
       { text: 'Website', link: 'https://craterapp.com' },
     ],
