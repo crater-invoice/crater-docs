@@ -33,7 +33,7 @@ ZIP PHP Extension
 
 ### Step 1 : Download
 
-[Download](http://craterapp.com/downloads) the latest Crater package.
+[Download](http://crater.financial/downloads) the latest Crater package.
 
 Alternatively, If you are a developer, follow the installation steps for your project on [this Link](./developer-guide.md)
 
